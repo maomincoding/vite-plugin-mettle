@@ -1,0 +1,60 @@
+{
+  "name": "vite-plugin-mettle",
+  "description": "Mettle.js integration plugin for vite",
+  "type": "module",
+  "version": "0.0.1",
+  "main": "dist/cjs/index.cjs",
+  "module": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    "types": "./dist/types/index.d.ts",
+    "import": "./dist/esm/index.mjs",
+    "node": "./dist/cjs/index.cjs",
+    "require": "./dist/cjs/index.cjs",
+    "default": "./dist/cjs/index.cjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c && tsc --emitDeclarationOnly",
+    "dev": "rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maomincoding/babel-plugin-mettle"
+  },
+  "bugs": {
+    "url": "https://github.com/maomincoding/babel-plugin-mettle/issues"
+  },
+  "homepage": "https://github.com/maomincoding/babel-plugin-mettle#readme",
+  "keywords": [
+    "mettle",
+    "mettle-js",
+    "vite",
+    "vite-plugin-mettle",
+    "vite-plugin"
+  ],
+  "author": "maomincoding",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.23.3",
+    "@types/babel__core": "^7.20.4",
+    "babel-preset-mettle": "^0.0.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@types/node": "^18.18.4",
+    "rollup": "^4.5.0",
+    "rollup-plugin-cleaner": "^1.0.0",
+    "typescript": "^5.2.2",
+    "vite": "^6.0.0"
+  },
+  "peerDependencies": {
+    "vite": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0"
+  }
+}
