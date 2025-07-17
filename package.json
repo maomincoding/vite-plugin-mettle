@@ -2,7 +2,7 @@
   "name": "vite-plugin-mettle",
   "description": "Mettle.js integration plugin for vite",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "dist/cjs/index.cjs",
   "module": "dist/esm/index.mjs",
   "types": "dist/types/index.d.ts",
@@ -40,10 +40,9 @@
   "dependencies": {
     "@babel/core": "^7.23.3",
     "@types/babel__core": "^7.20.4",
-    "babel-preset-mettle": "^0.0.1"
+    "babel-preset-mettle": "^0.1.0"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.23.3",
     "@babel/preset-typescript": "^7.23.3",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^25.0.7",
